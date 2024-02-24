@@ -1,0 +1,36 @@
+@media screen and (max-width: 800px) {
+    .login { 
+        position: relative;
+    }
+
+    .login__checkbox-label {
+        font-size: 14px;
+    }
+
+    .login__castom-checkbox {
+        margin-top: 4px;
+    }
+
+    .login__castom-checkbox:after {
+        top: -4px;
+    }
+
+    .login__content-left {
+        display: none;
+    }
+
+    .login__content-right {
+        position: relative;
+        width: 100%;
+    }
+    
+    .login__form .remember-me-box .loss-password{
+        font-size: 14px;
+    }
+
+    .login__form-inner {
+        transform: translateY(50%) translateX(-50%);
+        left: 50%;
+        max-width: 350px;
+    }
+}

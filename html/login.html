@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/additional.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/castom.css">
+    <link rel="stylesheet" href="../css/media-login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="login">
+            <div class="login__inner d-flex flex-column flex-md-row">
+                <div class="login__content-left">
+                    <img src="../img/login/login.jpg" alt="login-picture">
+                </div>
+                <div class="login__content-right">
+                    <div class="login__form-inner">
+                        <div class="login__logo-wrapper d-flex justify-content-center">
+                            <a href="#">
+                                <img src="../img/icons/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <form id="login__form" class="login__form" action="/user/login" method="post">
+                            <input type="hidden" name="_csrf" value="-ug1Kme7NzTPRvHL_EcsD-uoKZV2-htFbbpHlApqJGjNgFxsHvcEfJwjm_mMEHU4utFA8TuvfCMe9DTxPD5MXQ==">
+                            <div class="feedback__fields">
+                                <div class="input-wrap field-loginform-email required">
+                                    <input type="email" id="loginform-email" class="" name="LoginForm[email]" 
+                                        data-name="email" required="required" placeholder="E-mail" aria-required="true">
+                                    <div class="help-block"></div>
+                                </div>
+                                <div class="input-pass-wrap field-loginform-password required">
+                                    <input type="password" id="loginform-password" class="" name="LoginForm[password]" data-name="password" required="required" placeholder="Пароль" aria-required="true">
+                                    <div class="help-block"></div>
+                                </div>
+                                <div class="remember-me-box d-flex">
+                                    <div class="remember field-loginform-rememberme">
+                                        <input type="hidden" name="LoginForm[rememberMe]" value="0">
+                                        <label class="login__checkbox-label">
+                                            <input type="checkbox" id="loginform-rememberme" class="login__checkbox" name="LoginForm[rememberMe]" value="1" checked="" data-name="rememberMe">
+                                            <span class="login__castom-checkbox"></span>
+                                            Запомнить меня
+                                        </label>
+                                        <div class="help-block"></div>
+                                    </div> 
+                                    <a href="/user/request-password-reset" class="loss-password">Забыли пароль?</a>
+                                </div>
+                            </div>
+                            <button type="submit" class="feedback__btn btn">войти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
