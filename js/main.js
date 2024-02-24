@@ -147,7 +147,7 @@ MQ(minLg, function () {
 // productCatalogBreadCrumbs()
 fixElements();
 inputMask();
-menuToggle();
+// menuToggle();
 popupOpener();
 amountCounter();
 filterResetBtn();
