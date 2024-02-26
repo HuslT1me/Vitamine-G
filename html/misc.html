@@ -4,15 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/additional.css" />
-  <link rel="stylesheet" href="../css/choises.css" />
-  <link rel="stylesheet" href="../css/main.css" />
+  <!-- <link rel="stylesheet" href="../css/additional.css" />-->
+  <link rel="stylesheet" href="../css/choises.css" /> 
+  <link rel="stylesheet" href="../css/main.css" /> 
   <link rel="stylesheet" href="../css/castom.css" />
   <link rel="stylesheet" href="../css/media-misc.css" />
   <title>Document</title>
 </head>
+<body>
 <main class="main">
-  <header class="header">
+   <header class="header">
     <div class="container">
       <div class="row header__row">
         <div class="header__left-col aos-init aos-animate" data-aos="fade-up">
@@ -65,28 +66,7 @@
               <div class="search__wrap">
                 <div class="input-wrap">
                   <span class="twitter-typeahead" style="position: relative; display: inline-block">
-                    <pre aria-hidden="true" style="
-                          position: absolute;
-                          visibility: hidden;
-                          white-space: pre;
-                          font-family: ProximaNova, sans-serif;
-                          font-size: 16px;
-                          font-style: normal;
-                          font-variant: normal;
-                          font-weight: 300;
-                          word-spacing: 0px;
-                          letter-spacing: 0.32px;
-                          text-indent: 0px;
-                          text-rendering: auto;
-                          text-transform: none;
-                        "></pre>
-                    <div class="tt-menu" style="
-                          position: absolute;
-                          top: 100%;
-                          left: 0px;
-                          z-index: 100;
-                          display: none;
-                        ">
+                    <div class="tt-menu" style="position: absolute; top: 100%;  left: 0px; z-index: 100; display: none;">
                       <div class="tt-dataset tt-dataset-0"></div>
                     </div>
                   </span>
@@ -136,85 +116,14 @@
           </div>
           <button class="hamburger hamburger--slider js-menu" type="button">
             <span class="hamburger-box">
-              <span class="hamburger-inner"> </span>
+              <span class="bg-menu"> </span>
             </span>
           </button>
         </div>
       </div>
     </div>
-    <!-- <div class="header__right-col aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                    <div class="header__wrap">
-                        <a class="header__user-panel-link" href="/user/login">
-                            <div class="header__user-panel-wrap">
-                                <svg class="icon icon--user">
-                                    <use xlink:href="/assets/27646b0a/img/svg-sprite.svg#user"></use>
-                                </svg>
-                            </div>
-                        </a>
-                        <button class="hamburger hamburger--slider js-menu" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner">
-
-                                </span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <form class="header__select-location d-lg-none d-flex" action="#" method="get">
-                    <span>адрес доставки: </span>
-                    <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true"
-                        aria-expanded="false">
-                        <div class="choices__inner">
-                            <select name="select" class="js-choice choices__input" hidden="" tabindex="-1" data-choice="active">
-                                <option value="Москва" data-custom-properties="[object Object]">Москва</option>
-                            </select>
-                            <div class="choices__list choices__list--single">
-                                <div class="choices__item choices__item--selectable" data-item="" data-id="1" data-value="Москва" data-custom-properties="[object Object]" aria-selected="true">
-                                    Москва
-                                </div>
-                            </div>
-                        </div>
-                        <div class="choices__list choices__list--dropdown" aria-expanded="false">
-                            <div class="choices__list" role="listbox">
-                                <div id="choices--select-yo-item-choice-1" class="choices__item choices__item--choice is-selected choices__item--selectable is-highlighted"
-                                    role="option" data-choice="" data-id="1" data-value="Москва" data-select-text=""
-                                    data-choice-selectable="" aria-selected="true">Москва</div>
-                                <div id="choices--select-yo-item-choice-2"
-                                    class="choices__item choices__item--choice choices__item--selectable" role="option"
-                                    data-choice="" data-id="2" data-value="Санкт-Петербург" data-select-text=""
-                                    data-choice-selectable="">Санкт-Петербург</div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="mobile-menu">
-            <div class="mobile-menu__container">
-                <div class="mobile-menu__top-row">
-                    <div class="mobile-menu__left-col"></div>
-                    <div class="mobile-menu__right-col"><a class="header__user-panel-link" href="/user/login">
-                            <div class="header__user-panel-wrap">
-                                <svg class="icon icon--user">
-                                    <use xlink:href="/assets/27646b0a/img/svg-sprite.svg#user"></use>
-                                </svg>
-                            </div>
-                        </a>
-                        <button class="hamburger hamburger--slider js-menu" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <div class="mobile-menu__center-row"></div>
-                <div class="mobile-menu__bottom-row">
-                    <a class="mobile-menu__mail" href="mailto:info@vitaminguru.ru">
-                        info@vitaminguru.ru 
-                    </a>
-                </div>
-            </div>
-        </div> -->
+    </div>
+    
   </header>
   <section class="misc">
     <div class="container">
@@ -400,23 +309,9 @@
     </div>
   </section>
 </main>
-
-<!-- <script src="../js/additional.js"></script> -->
-<script src="../js/libs.min.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/typeahead.bundle.min.js"></script>
-<script src="../js/jquery.cookie.js"></script>
-<!-- Логика селекта выпадающих списков aside -->
-<script src="../js/dropdown-misk.js"></script>
-<!-- Логика работы гамбурегер меню -->
-<script src="../js/dropdown-location.js"></script>
-<!-- Логика работы гамбурегер меню -->
-<script src="../js/menu-toggle-misc.js"></script>
-
-
 <div class="mobile-menu">
   <div class="mobile-menu__container">
-    <div class="mobile-menu__top-row">
+    <!-- <div class="mobile-menu__top-row">
       <div class="mobile-menu__left-col">
         <a class="header__logo-link" href="/">
           <div class="header__logo-wrap">
@@ -434,19 +329,19 @@
         </a>
         <button class="hamburger hamburger--slider js-menu" type="button">
           <span class="hamburger-box">
-            <span class="hamburger-inner"> </span>
+            <span class="hamburger-close"> </span>
           </span>
         </button>
       </div>
-    </div>
+    </div> -->
     <div class="mobile-menu__center-row">
       <div class="popup__wrap d-flex">
-        <form class="header__select-location d-lg-flex d-none" action="#" method="get">
+        <form class="header__select-location d-lg-flex" action="#" method="get">
           <span>ваш город: </span>
           <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true"
             aria-expanded="false">
-            <div class="choices__inner"><select name="select" class="js-choice choices__input" hidden=""
-                tabindex="-1" data-choice="active">
+            <div class="choices__inner"><select name="select" class="js-choice choices__input" hidden="" tabindex="-1"
+                data-choice="active">
                 <option value="Москва" data-custom-properties="[object Object]">Москва</option>
               </select>
               <div class="choices__list choices__list--single">
@@ -495,8 +390,7 @@
           </li>
         </ul>
       </nav>
-      <div class="phone header__phone"></div>
-      <div class="misc__telegram-faq">
+      <div class="misc__mobile-faq">
         <p>Если у вас возник вопрос:</p>
         <a href=""> FAQ </a>
         <a href="">
@@ -507,6 +401,21 @@
   </div>
 </div>
 
-<body></body>
+
+
+<!-- <script src="../js/additional.js"></script> -->
+<script src="../js/libs.min.js"></script>
+<!-- <script src="../js/main.js"></script>
+<script src="../js/typeahead.bundle.min.js"></script>
+<script src="../js/jquery.cookie.js"></script> -->
+<!-- Логика селекта выпадающих списков aside -->
+<script src="../js/dropdown-misk.js"></script>
+<!-- Логика работы гамбурегер меню -->
+<script src="../js/dropdown-location.js"></script>
+<!-- Логика работы гамбурегер меню -->
+<script src="../js/menu-toggle-misc.js"></script>
+
+
+</body>
 
 </html>

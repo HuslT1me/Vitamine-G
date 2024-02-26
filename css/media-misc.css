@@ -1,122 +1,351 @@
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1250px;
+  }
 
-@media screen and (max-width: 768px) {
-    .header .container  {
-        padding: 0;
-    }
-    
-    .main {
-        padding-top: 83px;
-    }
+  .header__left-col {
+    margin-right: 65px;
+  }
+}
 
-    .container { 
-        max-width: calc(100% - 40px);
-    }
+@media screen and (max-width: 1279px) {
+  .misc__telegram-faq {
+    max-height: 191px;
+  }
 
-    .header { 
-        padding:22px 0 23px;
-    }
-    
-    .header__row {
-        justify-content: space-between;
+  .header .container {
+    max-width: calc(100% - 40px);
+  }
+
+  .header__left-col {
+    margin-right: 39px;
+  }
+
+}
+
+@media screen and (max-width: 1233px) {
+    .header__right-col { 
         padding-right: 0;
-        padding-left: 0;
-    }
-   
-    .header__left-col { 
+      }
+}
+
+@media (max-width: 1094px) { 
+    .header__logo-link { 
+        max-width: 80%;
         margin-right: 0;
     }
-    
-    .header__right-col {
-        justify-content: flex-end;
-    }
-    
-    .header__right-col { 
-        flex: 1 1 auto;
-        max-width: max-content;
-        height: 38px;
-        gap: 0 20px;
-    }
 
-    .misc__inner { 
-        flex-direction: column;
-    }
-    
-    .misc__aside { 
-        display: flex;
-        flex-direction: column;
-        border-top: 0;
-        max-width: 100%;
-        margin-top: 0;
-        margin-left: 0;
-    }
-    
-    .misc__aside-list > p {
-        display: block;
-        font-size: 14px;
-        border-bottom: 1px solid #979797;
-        font-weight: 700;
-        line-height: 20px;
-        padding-bottom: 10px;
-        position: relative;
-    }
-
-    .misc__aside-list > p::after { 
-        position: absolute;
-        display: block;
-        content: '';
-        background-image: url(../img/icons/arrow_aside.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        right: 0;
-        bottom: 14px;
-        width: 10px;
-        height: 6px;
-    }
-
-    .misc__text {
-        order: 3;
-    }
-    
-    .misc__text > h1 {
-        font-size: 30px;
-        line-height: 40px;
-    }
-    
-    .misc__text > p {
-        font-size: 14px;
-        line-height: 24px;
-        margin: 20px 0;
-    }
-
-    .misc__text > b {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .misc__telegram-faq {
-        order: 2;
-        max-width: 100%;
-        display: flex;
-        gap: 0 16px;
-        align-items: center;
-        margin-top: 0;
-        margin-left: 0;
-        border: 0;
-    }
-
-    .misc__telegram-faq > p {
-        font-size: 13px;
-    }
-    
-    .misc__telegram-faq > a {
-        font-size: 16px;
-    }
-
-    .misc__telegram-faq > a > img {
-        width: 24px;
-        height: 24px;
+    .header__center-col { 
+        margin-right: 25px;
     }
 }
 
+@media (min-width: 992px) {
+  .header .container {
+    max-width: calc(100% - 120px);
+  }
+  .container {
+    max-width: calc(100% - 120px);
+  }
+}
 
+@media only screen and (max-width: 991px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .main {
+    padding-top: 60px;
+  }
+
+  .container {
+    max-width: calc(100% - 80px);
+  }
+
+  .nav__link {
+    color: black;
+  }
+
+  .header .header__select-location {
+    display: none !important;
+  }
+
+  .hamburger--slider.is-active .hamburger-inner::after {
+    background-image: url(../img/icons/close-burger.svg);
+  }
+
+  .hamburger-close {
+    background-image: url(../img/icons/close-burger.svg);
+  }
+
+  .mobile-menu.opened {
+    top: 80px;
+  }
+
+  .header__center-col {
+    display: none !important;
+  }
+
+  .header__select-location {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .nav__link { 
+    font-size: 20px;
+  }
+
+  a.phone__link {
+    color: black;
+    font-weight: 700;
+    line-height: 24px;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  a.phone__link:hover {
+    color: black;
+  }
+
+  .header__right-col {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    max-width: 50%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 0 20px;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 10;
+    background: #fff;
+    padding: 22px 0 23px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .header__logo-wrap {
+    justify-content: start;
+  }
+
+  .header__logo-wrap > img {
+    max-width: 90%;
+  }
+
+  .bg-menu {
+    background-image: url("../img/icons/openMenu.svg");
+    height: 15px;
+    width: 23px;
+    display: block;
+  }
+
+  .bg-menu.active {
+    background-image: url("../img/icons/closeMenu.svg");
+    width: 15px;
+  }
+
+  .header__row {
+    justify-content: space-between;
+  }
+
+  .header__right-col {
+    height: 53px;
+    max-width: 120px !important;
+    gap: 30px;
+  }
+
+  .misc__aside {
+    margin-top: 45px;
+  }
+
+  .misc__mobile-faq {
+    order: 2;
+    max-width: 100%;
+    display: flex;
+    gap: 0 16px;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 0;
+    border: 0;
+    position: relative;
+  }
+
+  .misc__mobile-faq::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-bottom: 1px solid #D9D9D9;
+    width: 73px;
+    height: 0;
+    bottom: -15px;
+    left: 0;
+  }
+
+  .misc__mobile-faq > p {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header .container {
+    padding: 0;
+  }
+
+  .main {
+    padding-top: 83px;
+  }
+
+  .container {
+    max-width: calc(100% - 40px);
+  }
+
+  .header {
+    padding: 22px 0 23px;
+  }
+
+  .header__row {
+    justify-content: space-between;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .header__left-col {
+    margin-right: 0;
+  }
+
+  .header__right-col {
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    max-width: max-content;
+    height: 38px;
+    gap: 0 20px;
+  }
+
+  .misc__inner {
+    flex-direction: column;
+  }
+
+  .misc__aside {
+    display: flex;
+    flex-direction: column;
+    border-top: 0;
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .misc__aside-list > p {
+    display: block;
+    font-size: 14px;
+    border-bottom: 1px solid #979797;
+    font-weight: 700;
+    line-height: 20px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+
+  .misc__aside-list > p::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url(../img/icons/arrow_aside.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    bottom: 14px;
+    width: 10px;
+    height: 6px;
+  }
+
+  .misc__text {
+    order: 3;
+  }
+
+  .misc__text > h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .misc__text > p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 20px 0;
+  }
+
+  .misc__text > b {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .misc__telegram-faq {
+    order: 2;
+    max-width: 100%;
+    display: flex;
+    gap: 0 16px;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 0;
+    border: 0;
+  }
+
+  .misc__telegram-faq > p {
+    font-size: 13px;
+  }
+
+  .misc__telegram-faq > a {
+    font-size: 16px;
+  }
+
+  .misc__telegram-faq > a > img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .misc__inner {
+    flex-direction: column;
+  }
+
+  .misc__aside {
+    font-size: 14px;
+  }
+
+  .header__logo-wrap {
+    max-width: 142px;
+  }
+
+  .header__right-col {
+    max-width: 120px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .header__right-col {
+    padding: 0px 20px 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 60%;
+    flex: 1 1 60%;
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .header__user-panel-wrap .icon {
+    width: 23px;
+    height: 23px;
+  }
+}
