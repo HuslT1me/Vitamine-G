@@ -162,8 +162,9 @@
 
   .header__right-col {
     height: 53px;
-    max-width: 120px !important;
+    max-width: 90px !important;
     gap: 30px;
+    padding-right: 0;
   }
 
   .misc__aside {
@@ -195,6 +196,11 @@
 
   .misc__mobile-faq > p {
     margin-bottom: 0;
+  }
+
+  .mobile-menu__container { 
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -313,6 +319,19 @@
     width: 24px;
     height: 24px;
   }
+
+  .mobile-menu__container { 
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header__select-location { 
+    flex-direction: column;
+  }
+
+  .mobile-menu { 
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -329,13 +348,13 @@
   }
 
   .header__right-col {
-    max-width: 120px;
+    max-width: 90px;
+    padding: 0;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .header__right-col {
-    padding: 0px 20px 0;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 60%;
     flex: 1 1 60%;
