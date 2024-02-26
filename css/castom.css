@@ -257,6 +257,11 @@ a.phone__link {
     flex-direction: column;
 }
 
+.misc__aside-list:last-child {
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 13px;
+}
+
 .misc__aside-list > p { 
     display: flex;
     letter-spacing: 0.7px;
@@ -305,6 +310,7 @@ a.phone__link {
 
 .misc__aside-list.list-active > p {
     color: #05A8C1;
+    font-weight: 700;
 }    
 
 .misc__aside-list > ul > li > a { 
