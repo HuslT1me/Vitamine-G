@@ -417,7 +417,7 @@
   }
 
   .misc__telegram-faq { 
-    position: static;
+    position: relative;
     top: 0; 
   }
 }
