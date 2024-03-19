@@ -32,24 +32,23 @@
     position: sticky;
     top: 40px;
   }
-
 }
 
 @media screen and (max-width: 1233px) {
-    .header__right-col { 
-        padding-right: 0;
-      }
+  .header__right-col {
+    padding-right: 0;
+  }
 }
 
-@media (max-width: 1094px) { 
-    .header__logo-link { 
-        max-width: 80%;
-        margin-right: 0;
-    }
+@media (max-width: 1094px) {
+  .header__logo-link {
+    max-width: 80%;
+    margin-right: 0;
+  }
 
-    .header__center-col { 
-        margin-right: 25px;
-    }
+  .header__center-col {
+    margin-right: 25px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -59,7 +58,6 @@
   .container {
     max-width: calc(100% - 120px);
   }
-
 }
 
 @media only screen and (max-width: 991px) {
@@ -78,6 +76,7 @@
 
   .nav__link {
     color: black;
+    font-size: 20px;
   }
 
   .header .header__select-location {
@@ -103,10 +102,6 @@
   .header__select-location {
     padding-left: 0;
     margin-top: 0;
-  }
-
-  .nav__link { 
-    font-size: 20px;
   }
 
   a.phone__link {
@@ -201,33 +196,30 @@
 
   .line-decor::after {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
-    border-bottom: 1px solid #D9D9D9;
+    border-bottom: 1px solid #d9d9d9;
     width: 73px;
     height: 0;
     bottom: -15px;
     left: 0;
   }
 
-
   .misc__mobile-faq > p {
     margin-bottom: 0;
   }
 
-  .mobile-menu__container { 
+  .mobile-menu__container {
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  .misc__telegram-faq { 
+  .misc__telegram-faq {
     position: sticky;
-    top: 140px ;
+    top: 140px;
     margin-left: 0;
     margin-right: 50px;
   }
-  
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -278,10 +270,37 @@
     margin-left: 0;
   }
 
-  .misc__aside-list:last-child {
-    border-bottom: 1px solid #D9D9D9;
+  .menu-first {
+    display: none;
   }
-  
+
+  .menu-secondary {
+    display: none;
+  }
+
+  .menu-third {
+    display: none;
+  }
+
+  .menu-fourth {
+    display: none;
+  }
+  .menu-five {
+    display: none;
+  }
+
+  .tab--active {
+    color: #00a8c1;
+  }
+
+  .misc__aside--active {
+    display: block;
+  }
+
+  .misc__aside-list:last-child {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
   .misc__aside-list > p {
     display: block;
     font-size: 14px;
@@ -351,29 +370,28 @@
     height: 24px;
   }
 
-  .mobile-menu__container { 
+  .mobile-menu__container {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .header__select-location { 
+  .header__select-location {
     flex-direction: column;
   }
 
-  .mobile-menu { 
+  .mobile-menu {
     height: 100%;
   }
 
-  .decor-border{
+  .decor-border {
     position: relative;
-   }
- 
- 
-  .decor-border::after{
+  }
+
+  .decor-border::after {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
-    border-bottom: 1px solid #D9D9D9;
+    border-bottom: 1px solid #d9d9d9;
     width: 73px;
     height: 0;
     bottom: 15px;
@@ -384,7 +402,6 @@
     border-bottom: 0;
     padding-bottom: 0;
   }
-
 }
 
 @media screen and (max-width: 640px) {
@@ -411,14 +428,14 @@
     height: 46px;
   }
 
-  .header__logo-link { 
+  .header__logo-link {
     max-width: 85%;
     margin-right: 0;
   }
 
-  .misc__telegram-faq { 
+  .misc__telegram-faq {
     position: relative;
-    top: 0; 
+    top: 0;
   }
 }
 
@@ -435,5 +452,11 @@
   .header__user-panel-wrap .icon {
     width: 23px;
     height: 23px;
+  }
+}
+
+@media only screen and (min-width: 1210px) and (max-width: 1279px) {
+  .header__left-col {
+    margin-right: 67px;
   }
 }
