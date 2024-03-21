@@ -41,7 +41,7 @@ function openList(evt) {
 }
 
 function isActiveLink(evt){
-	// evt.preventDefault();
+	evt.preventDefault();
 	miskLinks.forEach(link => {
 		link.classList.remove('link-active');
 	})
