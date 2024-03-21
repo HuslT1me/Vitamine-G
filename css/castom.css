@@ -10,15 +10,25 @@
 }
 
 .login__content-right {
-  position: relative;
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .login__form .remember-me-box .remember,
+.login__form .remember-me-box .loss-password {
+  display: inline-block;
+  vertical-align: middle;
+  width: 49.5%;
+} */
+
+.remember-me-box { 
+  display: flex;
+  justify-content: space-between;
 }
 
 .login__form-inner {
-  position: absolute;
-  transform: translateY(-50%) translateX(-50%);
-  top: 50%;
-  left: 50%;
   width: calc(100% - 40px);
   max-width: 389px;
 }
