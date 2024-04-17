@@ -1,0 +1,82 @@
+<html lang="ru-RU">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="../css/main.css" rel="stylesheet" />
+        <title></title>
+    </head>
+    <body>
+        <main class="main">
+            <section class="registration">
+                <div class="registration__inner d-flex flex-column flex-md-row">
+                    <div class="registration__content-left">
+                        <img src="../img/login/registration-bg.webp" alt="registration-picture" />
+                    </div>
+                    <div class="registration__content-right">
+                        <div class="registration__form-inner">
+                            <div class="registration__logo-wrapper d-flex justify-content-center">
+                                <a href="#">
+                                    <img src="../img/icons/logo.svg" alt="logo" />
+                                </a>
+                            </div>
+                            <form
+                                id="registration__form"
+                                class="registration__form"
+                                action="/supplier/registration"
+                                method="post"
+                            >
+                                <div class="registration__fields">
+                                    <div class="input-wrap field-registrationform-email required">
+                                        <input
+                                            type="text"
+                                            id="registrationsuppliers-name"
+                                            class=""
+                                            name="company_name"
+                                            data-name="company_name"
+                                            required="required"
+                                            placeholder="Название поставщика"
+                                            aria-required="true"
+                                        />
+                                        <div class="help-block"></div>
+                                    </div>
+                                    <div class="input-email-wrap field-registrationform-password required">
+                                        <input
+                                            type="text"
+                                            id="registrationform-email"
+                                            class=""
+                                            name="company_email"
+                                            data-name="company_email"
+                                            required="required"
+                                            placeholder="Электронная почта"
+                                            aria-required="true"
+                                        />
+                                        <div class="help-block"></div>
+                                    </div>
+                                    <div class="offer-registration-box d-flex">
+                                        <div class="field-registrationform-offer">
+                                            <div class="checkbox">
+                                                <label class="registration__checkbox-label">
+                                                    <input type="checkbox" class="registration__offer-checkbox" />
+                                                    <span class="registration__castom-checkbox"></span>
+                                                    Я ознакомлен и согласен с условиями <a href="#">оферты</a> и
+                                                    <a href="#">политики конфиденциальности.</a>
+                                                </label>
+                                                <p class="help-block help-block-error"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="registration__btns-wrapper">
+                                    <button id="submit-registration" type="submit" class="registration__btn btn">
+                                        зарегистрироваться
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

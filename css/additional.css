@@ -68,12 +68,12 @@ form .has-error .help-block,
   margin-bottom: 20px;
 } */
 
-.login__form .remember-me-box .remember,
+/* .login__form .remember-me-box .remember,
 .login__form .remember-me-box .loss-password {
   display: inline-block;
   vertical-align: middle;
   width: 49.5%;
-}
+} */
 
 .login__form .remember-me-box .loss-password {
   text-align: right;
